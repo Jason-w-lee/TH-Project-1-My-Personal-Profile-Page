@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.nav-container {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -57,7 +57,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/nycskyline.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,12 +70,26 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border: 3px solid slategrey;
+  transition: all 1s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.3) rotate(10deg);
 }
+
+.resume {
+  border: 1px solid rgb(87, 85, 85);
+}
+
+.education,
+.expereince {
+  margin-top: 70px;
+}
+.resume ul li {
+  list-style-type: none;
+}
+
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -88,7 +102,8 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.background-info,
+.goals {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -98,8 +113,21 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
-.card:hover {
+.background-info:hover,
+.goals:hover {
   border-color: #ff99ff;
+}
+
+.goals img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.img-learn {
+  width: 300px;
+  height: 170px;
 }
 
 ul.skills {
